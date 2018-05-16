@@ -34,15 +34,7 @@ Locate your Sublime Text `Packages directory` by using the menu item `Preference
 
 Then, clone the repository using this command:
 
-    git clone https://github.com/Kronuz/Kronuz-Theme/ "Theme - Kronuz"
-
-
-### Manual installation
-
-* Download the [GitHub .zip](https://github.com/Kronuz/Kronuz-Theme/archive/master.zip)
-* Unzip the files and rename the folder to `Theme - Kronuz`
-* Find your `Packages` directory using the menu item  `Preferences -> Browse Packages...`
-* Copy the folder into your Sublime Text `Packages` directory.
+    git clone git@github.com:oakhan3/Kronuz-Theme.git "Theme - Kronuz"
 
 
 ## Activating the Theme
