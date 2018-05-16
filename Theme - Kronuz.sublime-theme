@@ -10,7 +10,7 @@
     {
         "class": "sheet_container_control",
         "layer0.tint": [33, 33, 33],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1.0,
     },
 
 
@@ -102,7 +102,8 @@
         "fg": [176, 190, 197, 255],
         "match_fg": [128, 203, 196, 255],
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [128, 203, 196, 255]
+        "selected_match_fg": [128, 203, 196, 255],
+        "font.face": "Menlo",
     },
 
     {
@@ -143,13 +144,13 @@
     // Command Panel (Quick panel background)
     {
         "class": "overlay_control",
-        "layer0.texture": "Theme - Kronuz/assets/overlay-bg.png",
+        "layer0.tint": [37,37,37],
         "layer0.inner_margin": [12, 6, 12, 15],
         "layer0.opacity": 1.0,
-        "layer1.texture": "Theme - Kronuz/assets/quick-panel-background.png",
+        "layer1.tint": [37,37,37],
         "layer1.inner_margin": [12, 40, 12, 19],
         "layer1.opacity": 1.0,
-        "content_margin": [8, 6, 8, 13]
+        "content_margin": [8, 6, 8, 13],
     },
 
     //
@@ -160,7 +161,7 @@
         "class": "mini_quick_panel_row",
         "layer0.texture": "Theme - Kronuz/assets/quick-panel-row.png",
         "layer0.inner_margin": [2, 2, 2, 2],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1.0,
     },
     {
         "class": "mini_quick_panel_row",
@@ -195,7 +196,9 @@
         "fg": [210, 210, 210, 255],
         "match_fg": [126, 199, 239, 255],
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [166, 229, 255, 255]
+        "selected_match_fg": [166, 229, 255, 255],
+        "font.face": "Menlo"
+
     },
     {
         "class": "quick_panel_path_label",
@@ -222,15 +225,14 @@
     // Tab set
     {
         "class": "tabset_control",
-        "layer0.texture": "Theme - Kronuz/assets/tabset-background.png",
-        "layer0.inner_margin": [1, 7],
         "layer0.opacity": 1.0,
         "content_margin": [3, 4, 3, 3],
-        "tab_overlap": 24,
         "tab_width": 180,
         "tab_min_width": 45,
-        "tab_height": 28,
-        "mouse_wheel_switch": false
+        "mouse_wheel_switch": false,
+        "tab_height": 25,
+        "tab_overlap": 0,
+        "layer0.tint": [22,22,22],
     },
     {
         "class": "tabset_control",
@@ -248,9 +250,10 @@
         "content_margin": [22, 6, 22, 4],
         "max_margin_trim": 0,
         "hit_test_level": 0.5,
-        "layer0.texture": "Theme - Kronuz/assets/tab-inactive.png",
         "layer0.inner_margin": [18, 4],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1.0,
+        // EDITTED BY OMAR
+        "layer0.tint": [22,22,22]
     },
     // Tab close state
     {
@@ -262,14 +265,15 @@
     {
         "class": "tab_control",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Kronuz/assets/tab-hover.png"
+        "layer0.tint": [22,22,22],
     },
     // Tab active state
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - Kronuz/assets/tab-active.png"
+        "layer0.tint": [35,35,35]
     },
+
     // Tab dirty state (close button hidden)
     {
         "class": "tab_control",
@@ -378,8 +382,10 @@
         "fg": [140, 140, 140],
         "shadow_color": [25, 25, 25],
         "shadow_offset": [0, -1],
-        "font.italic": false
+        "font.italic": false,
+        "font.face": "Menlo"
     },
+
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
@@ -409,7 +415,6 @@
         "class": "show_tabs_dropdown_button",
         "content_margin": [12, 12],
         "layer0.texture": "Theme - Kronuz/assets/overflow_menu.png",
-        // "layer0.texture": "Theme - Kronuz/assets/tabset-list.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
@@ -417,7 +422,6 @@
         "class": "show_tabs_dropdown_button",
         "attributes": ["hover"],
         "layer0.texture": "Theme - Kronuz/assets/overflow_menu--hover.png"
-        // "layer0.texture": "Theme - Kronuz/assets/tabset-list-hover.png"
     },
 
     // Tab scroll left
@@ -426,7 +430,6 @@
         "class": "scroll_tabs_left_button",
         "content_margin": [9, 7, 8, 6],
         "layer0.texture": "Theme - Kronuz/assets/arrow_left.png",
-        // "layer0.texture": "Theme - Kronuz/assets/tabset-left.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
@@ -434,7 +437,6 @@
         "class": "scroll_tabs_left_button",
         "attributes": ["hover"],
         "layer0.texture": "Theme - Kronuz/assets/arrow_left--hover.png"
-        // "layer0.texture": "Theme - Kronuz/assets/tabset-left-hover.png"
     },
 
     // Tab scroll right
@@ -443,7 +445,6 @@
         "class": "scroll_tabs_right_button",
         "content_margin": [9, 7, 8, 6],
         "layer0.texture": "Theme - Kronuz/assets/arrow_right.png",
-        // "layer0.texture": "Theme - Kronuz/assets/tabset-right.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
@@ -451,7 +452,6 @@
         "class": "scroll_tabs_right_button",
         "attributes": ["hover"],
         "layer0.texture": "Theme - Kronuz/assets/arrow_right--hover.png"
-        // "layer0.texture": "Theme - Kronuz/assets/tabset-right-hover.png"
     },
 
 
@@ -461,8 +461,8 @@
 
     {
         "class": "title_bar",
-        "fg": ["background", 255, 255, 255, 0.4],
-        "bg": ["background", 0, 0, 0, 0.5],
+        "fg": [180, 180, 180],
+        "bg": [12, 12, 12],
     },
 
 
@@ -472,29 +472,27 @@
 
     {
         "class": "sidebar_container",
-        "layer0.tint": [33, 33, 33],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 24, 12, 24],
-        "content_margin": [0, 12, 0, 0]
+        "layer0.tint": [22, 22, 22]
     },
     {
         "class": "sidebar_tree",
-        "row_padding": [20, 3],
-        "indent": 16,
-        "indent_offset": 0,
         "indent_top_level": false,
-        "layer0.tint": [33, 33, 33],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 1.0,
+        "indent": 23,
+        "layer0.tint": [22, 22, 22],
+        "row_padding": [10, 2]
     },
 
     {
         "class": "sidebar_heading",
-        "color": [207, 216, 220],
         "font.bold": false,
         "font.size": 14,
         "shadow_color": [250, 250, 250, 0],
-        "shadow_offset": [0, 0]
+        "shadow_offset": [0, 0],
+        "color": [22, 22, 22],
     },
 
     {
@@ -525,7 +523,8 @@
         "font.bold": false,
         "font.italic": false,
         "shadow_color": [255, 255, 255, 0],
-        "shadow_offset": [0, 0]
+        "shadow_offset": [0, 0],
+        "font.face": "Menlo"
     },
 
     {
@@ -585,7 +584,6 @@
 
     {
         "class": "icon_file_type",
-        // layer0.texture is filled in by code with the relevant icon name
         "layer0.opacity": 0.6,
         "content_margin": [9, 9]
     },
@@ -997,7 +995,8 @@
         "color": [200, 200, 200],
         "shadow_color": [24, 24, 24, 0],
         "shadow_offset": [0, 0],
-        "font.bold": false
+        "font.bold": false,
+        "font.face": "Menlo"
     },
 
     // Status bar labels
@@ -1006,7 +1005,8 @@
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
         "color": [150, 150, 150],
-        "font.bold": false
+        "font.bold": false,
+        "font.face": "Menlo"
     },
 
     // Text field labels
@@ -1015,12 +1015,12 @@
         "class": "status_bar",
 
         // Layer 0 base
-        "layer0.tint": [40, 40, 40],
+        "layer0.tint": [12, 12, 12],
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
 
         // Visible tint layer
-        "layer1.tint": [40, 40, 40],
+        "layer1.tint": [12, 12, 12],
         "layer1.opacity": 1.0,
         "layer1.inner_margin": [2, 2],
 
@@ -1034,7 +1034,7 @@
 
     {
         "class": "status_button",
-        "layer0.tint": [40, 40, 40],
+        "layer0.tint": [12, 12, 12],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [1, 0, 0, 0],
@@ -1064,10 +1064,10 @@
 
     {
         "class": "panel_control",
-        "layer0.texture": "Theme - Kronuz/assets/panel-background.png",
         "layer0.inner_margin": [0, 2, 0, 0],
         "content_margin": [0, 2, 0, 0],
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 0.7,
+        "layer0.tint": [22, 22, 22],
     },
 
     // Status bar panel close icon
@@ -1075,10 +1075,10 @@
     {
         "class": "panel_close_button",
         "layer0.texture": "Theme - Kronuz/assets/close_icon.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 1,
         "layer1.texture": "Theme - Kronuz/assets/close_icon--hover.png",
         "layer1.opacity": 0.0,
-        "content_margin": [8, 8] // 8, 8 to show
+        "content_margin": [0, 0]
     },
 
     {
@@ -1155,7 +1155,7 @@
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer1.opacity": 0.0
+        "layer1.opacity": 0.0,
     },
 
     {
