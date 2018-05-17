@@ -1,17 +1,17 @@
-# Theme - Kronuz
+# Theme - OKronuz
 
-Theme - Kronuz is a dark Theme for Sublime Text and also it is a syntax color scheme. The theme is based on [Soda Dark](https://github.com/buymeasoda/soda-theme) and the [Afterglow](https://github.com/YabataDesign/afterglow-theme) theme.
+Theme - OKronuz is a dark Theme for Sublime Text and also it is a syntax color scheme. The theme is based on [Kronuz](https://github.com/Kronuz/Kronuz-Theme).
 
 ## Design & Colors
 
-[View a larger screenshot](https://raw.githubusercontent.com/Kronuz/Kronuz-Theme/master/Screenshots/Kronuz-Theme.png)
+[View a larger screenshot](https://raw.githubusercontent.com/OKronuz/OKronuz-Theme/master/Screenshots/OKronuz-Theme.png)
 
-![Theme - Kronuz](Screenshots/Kronuz-Theme.png)
+![Theme - OKronuz](Screenshots/OKronuz-Theme.png)
 
 
 ### Highlighted console
 
-![Console](Screenshots/Kronuz-Theme-Console.png)
+![Console](Screenshots/OKronuz-Theme-Console.png)
 
 
 *The font used in the screenshots is Menlo 12 with no antialias.
@@ -19,22 +19,13 @@ Theme - Kronuz is a dark Theme for Sublime Text and also it is a syntax color sc
 
 ## Installation
 
-### Package Control
-
-The easiest way to install is using [Sublime Package Control](https://sublime.wbond.net/).
-
-* Open `Command Palette` using menu item `Tools -> Command Palette...`, or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (OS X) <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Win/Linux)
-* Type `Package Control: Install Package`
-* Search `Theme - Kronuz`
-
-
 ### Git Installation
 
 Locate your Sublime Text `Packages directory` by using the menu item `Preferences -> Browse Packages...`.
 
 Then, clone the repository using this command:
 
-    git clone git@github.com:oakhan3/Kronuz-Theme.git "Theme - Kronuz"
+    git clone git@github.com:oakhan3/OKronuz-Theme.git "Theme - OKronuz"
 
 
 ## Activating the Theme
@@ -43,21 +34,21 @@ Activate this theme and color scheme by modifying your user preferences file, wh
 
 Then add the following code settings, depending on the theme you choose. **(After activating the theme, you must restart Sublime Text.)**
 
-### Settings for Theme - Kronuz
+### Settings for Theme - OKronuz
 
 ```json
 {
-    "theme": "Theme - Kronuz.sublime-theme",
-    "color_scheme": "Packages/Theme - Kronuz/Kronuz.tmTheme"
+    "theme": "Theme - OKronuz.sublime-theme",
+    "color_scheme": "Packages/Theme - OKronuz/OKronuz.tmTheme"
 }
 ```
 
 Other settings you can use:
 
-`kronuz_theme_hide_fileicons` - If true, prevents the theme from showing file icons in the sidebar.
-`kronuz_theme_no_folder_animation` - If true, prevents the theme from using folder icon animation in the sidebar.
-`kronuz_theme_no_tree_indicator` - If true, prevents the theme from showing the currently selected item in the sidebar.
+`okronuz_theme_hide_fileicons` - If true, prevents the theme from showing file icons in the sidebar.
+`okronuz_theme_no_folder_animation` - If true, prevents the theme from using folder icon animation in the sidebar.
+`okronuz_theme_no_tree_indicator` - If true, prevents the theme from showing the currently selected item in the sidebar.
 
 ## Retina Resolution UI
 
-Kronuz Theme supports retina display.
+OKronuz Theme supports retina display.

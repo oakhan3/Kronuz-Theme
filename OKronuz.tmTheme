@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>github.com/Kronuz</string>
+	<string>github.com/OKronuz</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>gutterSettings</key>
@@ -20,9 +20,9 @@
 		<string>#86c20e</string>
 	</dict>
 	<key>name</key>
-	<string>Kronuz</string>
+	<string>OKronuz</string>
 	<key>semanticClass</key>
-	<string>theme.kronuz</string>
+	<string>theme.okronuz</string>
 	<key>settings</key>
 	<array>
 		<dict>

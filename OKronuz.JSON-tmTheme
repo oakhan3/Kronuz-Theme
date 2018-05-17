@@ -1,8 +1,8 @@
 // [PackageDev] target_format: plist, ext: tmTheme
 {
-    "name": "Kronuz",
-    "semanticClass": "theme.kronuz",
-    "author": "github.com/Kronuz",
+    "name": "OKronuz",
+    "semanticClass": "theme.okronuz",
+    "author": "github.com/OKronuz",
     "colorSpaceName": "sRGB",
     "gutterSettings": {
         "background": "#073642",
